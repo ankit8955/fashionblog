@@ -12,13 +12,14 @@
       <div class="navbar">
         <img src="logo.png" alt="logo" class="logo" />
         <nav>
-          <ul>
+          <ul id="menulist">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Collections</a></li>
             <li><a href="#">Category</a></li>
           </ul>
         </nav>
+        <img src="menu.png" alt="menu" class="menu" onclick="togglemenu"() " />
         <img src="cart.png" alt="cart" class="cart" />
       </div>
       <div class="content">
@@ -39,5 +40,19 @@
         <a href="">TWITTER</a>
       </div>
     </div>
+
+    <script>
+      var menulist = ducument.getElementById("menulist");
+
+      menulist.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menulist.style.maxHeight == "0px") {
+          menulist.style.maxHeight = "130px";
+        } else {
+          menulist.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
 </html>

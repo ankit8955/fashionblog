@@ -31,6 +31,12 @@
   cursor: pointer;
 }
 
+.menu {
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
 .cart {
   width: 40px;
   cursor: pointer;
@@ -117,4 +123,69 @@ nav ul li a {
   font-size: 15px;
   padding-right: 20px;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(90deg, #ff77cd, #87adfe);
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    z-index: 1;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: white;
+  }
+
+  .featured-img {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    left: 160px;
+  }
+
+  .content h1 {
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+  }
+
+  .social-links {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -120px;
+    bottom: 150px;
+  }
+
+  /* .arrow-icons img {
+    width: 30px;
+    margin-right: 80px;
+    margin-left: -50px;
+    margin-top: 180px;
+  } */
+  .arrow-icons {
+    position: relative;
+    top: 180px;
+    right: 70px;
+  }
+
+  .logo {
+    position: relative;
+    left: 130px;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+  }
 }
